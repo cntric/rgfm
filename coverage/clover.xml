@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1632876530726" clover="3.2.0">
+  <project timestamp="1632876530726" name="All files">
+    <metrics statements="28" coveredstatements="24" conditionals="18" coveredconditionals="9" methods="14" coveredmethods="12" elements="60" coveredelements="45" complexity="0" loc="28" ncloc="28" packages="2" files="3" classes="3"/>
+    <package name="Rgfm">
+      <metrics statements="11" coveredstatements="7" conditionals="14" coveredconditionals="6" methods="4" coveredmethods="2"/>
+      <file name="getComponentMembers.ts" path="/Users/lmonninger/Desktop/Dev/pay-portal/packages/rgfm/src/Rgfm/getComponentMembers.ts">
+        <metrics statements="11" coveredstatements="7" conditionals="14" coveredconditionals="6" methods="4" coveredmethods="2"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="10000" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="__test__">
+      <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="10"/>
+      <file name="generateComponentMembers.tsx" path="/Users/lmonninger/Desktop/Dev/pay-portal/packages/rgfm/src/__test__/generateComponentMembers.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="100" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="36" count="101" type="stmt"/>
+        <line num="39" count="101" type="stmt"/>
+        <line num="46" count="101" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="100" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+      </file>
+      <file name="getReactFiber.tsx" path="/Users/lmonninger/Desktop/Dev/pay-portal/packages/rgfm/src/__test__/getReactFiber.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="100" type="stmt"/>
+        <line num="7" count="200" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="100" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+  </project>
+</coverage>
