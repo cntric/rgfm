@@ -3,8 +3,6 @@ import { Children } from "react";
  * The error thrown when redundant members are provided as children.
  */
 export class ReactMemberRedundancyError extends Error {
-    name;
-    message;
     constructor(memberKey) {
         super();
         // Maintains proper stack trace for where our error was thrown (only available on V8)

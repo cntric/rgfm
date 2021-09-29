@@ -3,8 +3,6 @@ import React from "react";
  * The error thrown when redundant members are provided as children.
  */
 export declare class ReactMemberRedundancyError extends Error {
-    name: string;
-    message: string;
     constructor(memberKey: string);
 }
 export declare type MemberNamesT = Readonly<string[]>;

@@ -7,9 +7,6 @@ import React, { Children } from "react";
 export class ReactMemberRedundancyError 
         extends Error  {
 
-    name : string
-    message : string
-
     constructor(memberKey : string){
         super();
         // Maintains proper stack trace for where our error was thrown (only available on V8)
