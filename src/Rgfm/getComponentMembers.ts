@@ -22,7 +22,7 @@ export class ReactMemberRedundancyError
 
 }
 
-export type MemberNamesT = string[];
+export type MemberNamesT = Readonly<string[]>;
 export type MemberNameT<N extends MemberNamesT> =  N[number]
 export type MemberMapT<N extends MemberNamesT> = Partial<{
     [key in N[number]] : (React.ReactChild | React.ReactFragment | React.ReactPortal)
