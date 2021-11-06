@@ -42,7 +42,7 @@ export const getComponentMember = <N extends MemberNamesT>(
     const matchingItems = Children.toArray(children).length ?
             Children.toArray(children).filter((child)=>{
 
-                return (child as FC).displayName ? (child as FC).displayName === name : false;
+                return (child as any).type.displayName ? (child as any).type.displayName === name : false;
 
             }) : []
 

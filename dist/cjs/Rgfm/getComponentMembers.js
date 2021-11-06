@@ -29,7 +29,7 @@ const getComponentMember = (name, children) => {
     }
     const matchingItems = react_1.Children.toArray(children).length ?
         react_1.Children.toArray(children).filter((child) => {
-            return child.displayName ? child.displayName === name : false;
+            return child.type.displayName ? child.type.displayName === name : false;
         }) : [];
     if (matchingItems.length > 1) {
         throw new ReactMemberRedundancyError(name);
