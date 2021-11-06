@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React, { Children, FC } from "react";
 
 
 /**
@@ -24,6 +24,10 @@ export type MemberNameT<N extends MemberNamesT> =  N[number]
 export type MemberMapT<N extends MemberNamesT> = Partial<{
     [key in N[number]] : (React.ReactChild | React.ReactFragment | React.ReactPortal)
 }>
+export interface RgfmChildI extends FC {
+    rgfmName : string
+}
+
 
 /**
  * Gets a member component by name.
@@ -42,9 +46,9 @@ export const getComponentMember = <N extends MemberNamesT>(
     const matchingItems = Children.toArray(children).length ?
             Children.toArray(children).filter((child)=>{
 
-                return (child as any).type ? (
-                    (child as any).type.name ? (child as any).type.name === name : (
-                        (child as any).type.displayName ? (child as any).type.displayName === name : false // storybook uses display name
+                return (child as RgfmChildI).rgfmName ? (
+                    (child as any).rgfmName ? (child as any).rgfmName === name : (
+                        (child as any).rgfmName ? (child as any).type.rgfmName === name : false // storybook uses display name
                     )
                 ) : false
 

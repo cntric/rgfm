@@ -1,5 +1,6 @@
 import {generate} from "shortid";
 import React, {FC} from "react";
+import { RgfmChildI } from "Rgfm";
 
 /**
  * Generates a map (object) with unique keys.
@@ -29,7 +30,7 @@ export const FlashMap = <T extends any>(
  * @param name is the desired name.
  * @returns 
  */
-export const generateNamedMember= (name : string) : FC<{}>=>{
+export const generateNamedMember= (name : string) : RgfmChildI=>{
 
     const nm : {
         [key : string] : FC<{}>
@@ -45,9 +46,10 @@ export const generateNamedMember= (name : string) : FC<{}>=>{
 
     const item = nm[name]
 
-    item.displayName = name
+    item.displayName = name;
+    (item as RgfmChildI ).rgfmName = name;
 
-    return item;
+    return item as RgfmChildI;
 
 }
 
