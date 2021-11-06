@@ -43,7 +43,11 @@ export const generateNamedMember= (name : string) : FC<{}>=>{
         }
     }
 
-    return nm[name];
+    const item = nm[name]
+
+    item.displayName = name
+
+    return item;
 
 }
 

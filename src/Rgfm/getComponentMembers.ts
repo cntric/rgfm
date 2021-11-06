@@ -14,7 +14,7 @@ export class ReactMemberRedundancyError
             Error.captureStackTrace(this, ReactMemberRedundancyError)
         }
         this.name = "ReactMemberRedundancyError";
-        this.message = `You have provided more than one ${memberKey}. If you are working in the broswer, you may need to refresh to see your changes.`
+        this.message = `You have provided more than one ${memberKey}. If you are working in the browser, you may need to refresh to see your changes.`
     }
 
 }
