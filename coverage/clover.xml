@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636230974001" clover="3.2.0">
-  <project timestamp="1636230974001" name="All files">
-    <metrics statements="36" coveredstatements="27" conditionals="20" coveredconditionals="8" methods="15" coveredmethods="12" elements="71" coveredelements="47" complexity="0" loc="36" ncloc="36" packages="2" files="3" classes="3"/>
+<coverage generated="1636231516739" clover="3.2.0">
+  <project timestamp="1636231516739" name="All files">
+    <metrics statements="35" coveredstatements="26" conditionals="16" coveredconditionals="8" methods="15" coveredmethods="12" elements="66" coveredelements="46" complexity="0" loc="35" ncloc="35" packages="2" files="3" classes="3"/>
     <package name="Rgfm">
-      <metrics statements="16" coveredstatements="7" conditionals="16" coveredconditionals="5" methods="5" coveredmethods="2"/>
+      <metrics statements="16" coveredstatements="7" conditionals="12" coveredconditionals="5" methods="5" coveredmethods="2"/>
       <file name="getComponentMembers.ts" path="/Users/l-monninger/Desktop/dev/rgfm/src/Rgfm/getComponentMembers.ts">
-        <metrics statements="16" coveredstatements="7" conditionals="16" coveredconditionals="5" methods="5" coveredmethods="2"/>
+        <metrics statements="16" coveredstatements="7" conditionals="12" coveredconditionals="5" methods="5" coveredmethods="2"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="38" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="39" count="0" type="stmt"/>
         <line num="42" count="100" type="cond" truecount="1" falsecount="1"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="46" count="100" type="cond" truecount="1" falsecount="1"/>
-        <line num="49" count="10000" type="cond" truecount="1" falsecount="1"/>
-        <line num="59" count="100" type="cond" truecount="1" falsecount="1"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="63" count="100" type="cond" truecount="1" falsecount="1"/>
-        <line num="73" count="1" type="stmt"/>
-        <line num="78" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
+        <line num="45" count="10000" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="55" count="100" type="cond" truecount="1" falsecount="1"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
       </file>
     </package>
     <package name="__test__">
-      <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="10"/>
+      <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="10"/>
       <file name="generateComponentMembers.tsx" path="/Users/l-monninger/Desktop/dev/rgfm/src/__test__/generateComponentMembers.tsx">
-        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="100" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="37" count="101" type="stmt"/>
-        <line num="40" count="101" type="stmt"/>
-        <line num="47" count="101" type="stmt"/>
-        <line num="49" count="101" type="stmt"/>
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="100" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="36" count="101" type="stmt"/>
+        <line num="39" count="101" type="stmt"/>
+        <line num="46" count="101" type="stmt"/>
+        <line num="48" count="101" type="stmt"/>
         <line num="50" count="101" type="stmt"/>
-        <line num="52" count="101" type="stmt"/>
-        <line num="60" count="2" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
-        <line num="67" count="100" type="stmt"/>
-        <line num="78" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="100" type="stmt"/>
+        <line num="76" count="2" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
         <line num="88" count="1" type="stmt"/>
-        <line num="90" count="1" type="stmt"/>
       </file>
       <file name="getReactFiber.tsx" path="/Users/l-monninger/Desktop/dev/rgfm/src/__test__/getReactFiber.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>

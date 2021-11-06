@@ -13,7 +13,7 @@ export declare const FlashMap: <T extends unknown>(size: number, valueGenerator:
  * @param name is the desired name.
  * @returns
  */
-export declare const generateNamedMember: (name: string) => FC<{}>;
+export declare const generateNamedMember: (name: string) => FC;
 /**
  * Generates a membered component.
  * @param size is the number of possible members for the component.

@@ -13,7 +13,7 @@ class ReactMemberRedundancyError extends Error {
             Error.captureStackTrace(this, ReactMemberRedundancyError);
         }
         this.name = "ReactMemberRedundancyError";
-        this.message = `You have provided more than one ${memberKey}. If you are working in the broswer, you may need to refresh to see your changes.`;
+        this.message = `You have provided more than one ${memberKey}. If you are working in the browser, you may need to refresh to see your changes.`;
     }
 }
 exports.ReactMemberRedundancyError = ReactMemberRedundancyError;
@@ -29,8 +29,7 @@ const getComponentMember = (name, children) => {
     }
     const matchingItems = react_1.Children.toArray(children).length ?
         react_1.Children.toArray(children).filter((child) => {
-            return child.type ? (child.type.name ? child.type.name === name : (child.type.displayName ? child.type.displayName === name : false // storybook uses display name
-            )) : false;
+            return child.displayName ? child.displayName === name : false;
         }) : [];
     if (matchingItems.length > 1) {
         throw new ReactMemberRedundancyError(name);

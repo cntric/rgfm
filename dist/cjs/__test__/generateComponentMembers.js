@@ -26,7 +26,9 @@ const generateNamedMember = (name) => {
             return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: children }, void 0));
         }
     };
-    return nm[name];
+    const item = nm[name];
+    item.displayName = name;
+    return item;
 };
 exports.generateNamedMember = generateNamedMember;
 /**

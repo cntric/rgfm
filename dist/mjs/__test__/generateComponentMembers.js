@@ -25,7 +25,9 @@ export const generateNamedMember = (name) => {
             return (_jsx(_Fragment, { children: children }, void 0));
         }
     };
-    return nm[name];
+    const item = nm[name];
+    item.displayName = name;
+    return item;
 };
 /**
  * Generates a membered component.
